@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prata';
+    src: url('../fonts/Prata-Regular.woff2') format('woff2'),
+        url('../fonts/Prata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  background-image: url(../images/bg_main-mobile.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.container-header {
+  position: relative;
+}
+.logo-link {
+  font-family: Prata, serif;
+  font-size: 32px;
+  color: #eec643;
+  text-decoration: none;
+
+}
+.logo {
+  margin-top: 20px;
+}
+.toggler {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 30px
+}
+.toggler--close .burger {
+  width: 0;
+
+}
+.toggler--close .burger:before {
+  transform: rotate(-45deg);
+  transition: 300ms ease-in-out;
+  left: 12px;
+}
+.toggler--close .burger:after {
+  transform: rotate(45deg);
+  transition: 300ms ease-in-out;
+  right: 11px;
+}
+
+.burger {
+  width: 2px;
+  height: 25px;
+  background-color: #fff;
+  margin: auto; 
+}
+.burger:before {
+  transition: 300ms ease-in-out;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: #fff;
+  left: 0;
+  display: block;
+}
+.burger:after {
+  transition: 300ms ease-in-out;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: #fff;
+  right: 0;
+  display: block;
+}
+.promo__row-title {
+  margin-top: 90px;
+}
+ h2 {
+  font-size: 30px;
+  font-family: Prata, Regular ;
+ }
+.promo__title {
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  font-family: Prata, Regular ;
+}
+.text {
+  font-size: 16px;
+  color: #fff;
+}
+.text-promo {
+  font-size: 16px;
+  color: #fff;
+  margin: 15px 0 90px 0;
+}
+.promo-btn {
+  background-color: #eec643;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border: none;
+}
+.title-wrap {
+  position: relative;
+  
+}
+.title:before {
+ position: absolute;
+  content: "";
+  width: 230px;
+  height: 2px;
+  background-color: #eec643;
+  left: 0;
+  display: block; 
+}
+.title:after {
+   position: absolute;
+  content: "";
+  width: 230px;
+  height: 2px;
+  background-color: #eec643;
+  left: 0;
+  
+
+  display: block;
+}
+.school-title {
+  max-width: 259px;
+}
+
+/* ------------------------------------------grow*/
+.grow-item {
+  width: 290px;
+  height: 145px;
+  padding: 30px 0 0 10px;
+  margin-top: 10px;
+}
+.grow-item-vokal {
+ background-image: url(../images/vokal_m.jpg);
+  background-repeat: no-repeat; 
+  margin-top: 15px;
+}
+.grow-item-guitar {
+  background-image: url(../images/guitar_m.jpg);
+  background-repeat: no-repeat; 
+}
+.grow-item-piano {
+ background-image: url(../images/piano_m.jpg);
+  background-repeat: no-repeat; 
+  width: 212px;
+}
+.grow-btn {
+  background-color: #eec643;
+  width: 145px;
+  height: 60px;
+  text-align: left;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  position: absolute;
+  left: 258px;
+  bottom: -30px;
+  border: none;
+  padding: 10px 15px;
+
+}
+.grow-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.item-title  {
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  width: 200px;
+  margin: 0;
+}
+.grow-text {
+  width: 200px;
+  margin-top: 10px;
+}
+/*----------------------------------------------temp*/
+
+.temp-item {
+  width: 290px;
+  height: 145px;
+  padding: 30px 0 0 10px;
+  margin-top: 10px;
+}
+.temp-item-sostav {
+  background-image: url(../images/sostav_m.jpg);
+  background-repeat: no-repeat; 
+  margin-top: 15px;
+}
+.temp-item-result {
+  background-image: url(../images/result_m.jpg);
+  background-repeat: no-repeat; 
+  margin-top: 15px;
+}
+.temp-item-studio {
+  background-image: url(../images/studio_m.jpg);
+  background-repeat: no-repeat; 
+  width: 212px;
+}
+.temp-btn {
+  background-color: #eec643;
+  color: #fff;
+  width: 145px;
+  height: 60px;
+  text-align: left;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  position: absolute;
+  left: 258px;
+  bottom: -30px;
+  border: none;
+  padding: 10px 15px;
+}
+.temp-row {
+  position: relative;
+}
+.temp-text {
+  margin-top: 10px;
+}
+
+
+
+
+
+.carousel {
+width: 240px;
+margin: auto;
+
+position: relative;  
+}
+
+.school-item {
+  width: 239px;
+  height: 185px;
+  padding: 30px 0 0 10px;
+  margin-top: 10px;
+  margin: 0 0 25px ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-prev {
+  position: absolute;
+  top: 77px;
+  left: -25px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-image: url(../images/arrow_l.png);
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 100%;
+}
+.slick-next {
+  position: absolute;
+  top: 77px;
+  right: -34px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-image: url(../images/arrow_r.png);
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 100%;
+}
+.slick-slide {
+  height: 185px;
+}
+.school-item--cherry {
+  background-image: url(../images/video_card_cherry.jpg);
+}
+.school-item--young {
+  background-image: url(../images/video_card_img_young.jpg);
+}
+.school-item--summer {
+  background-image: url(../images/video_card_img_summer.jpg);
+}
+.school-item--trofimov {
+  background-image: url(../images/video_card_img_Trofimov.jpg);
+}
+
+.school-text {
+  margin: 5px 0 15px 0;
+}
+
+
+
+.school__item-title {
+  margin-top: 100px;
+}
+
+
+.phone {
+  text-decoration: none;
+  color: #000;
+}
+.map-wrapper {
+  height: 215px;
+  width: 290px; 
+  background-color: gray;
+}
+
+
+
+.nav {
+  display: none;
+  /*display: block;*/
+}
+
+
+.nav--visible {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: gray;
+  display: block;
+  list-style: none;
+
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2;
+}
+
+
+.promo__row-form {
+  display: none;
+  border: 1px solid #000;
+}
+.grow-item-lectures {
+  display: none;
+}
+.temp__row-forma {
+  display: none;
+}
+.school-item--hide {
+  display: none;
+}
+
+
+.nav__list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.col--lg-1 { width: 25%; }
+.col--lg-2 { width: 50%; }
+.col--lg-3 { width: 75%; }
+.col--lg-4 { width: 100%; }
+
+.col--lg-pl {
+	padding-left: 80px;
+}
+
+
+
