@@ -48,7 +48,8 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  max-width: 1200px; 
 }
 .container-header {
   position: relative;
@@ -413,7 +414,7 @@ position: relative;
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 760px) {
 
   .container {
   margin: 0 auto;
