@@ -41,6 +41,7 @@ body {
 .wrapper {
   background-image: url(../images/bg_main-mobile.jpg);
   background-repeat: no-repeat;
+
 }
 
 .container {
@@ -363,7 +364,7 @@ position: relative;
   left: 0;
   right: 0;
   top: 0;
-  background-color: gray;
+  background-color: #021a23;
   display: block;
   list-style: none;
 
@@ -380,6 +381,12 @@ position: relative;
   display: none;
   border: 1px solid #000;
 }
+.promo__form {
+  display: none;
+}
+.form-btn {
+  display: none;
+}
 .grow-item-lectures {
   display: none;
 }
@@ -389,7 +396,9 @@ position: relative;
 .school-item--hide {
   display: none;
 }
-
+.form {
+  display: none;
+}
 
 .nav__list {
   display: block;
@@ -404,6 +413,156 @@ position: relative;
 
 
 
+@media (min-width: 1280px) {
+
+  .container {
+  margin: 0 auto;
+  padding: 0 55px;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.news-list {
+  display: flex;
+}
+.wrapper {
+  background-image: url(../images/bg_main.jpg);
+  background-repeat: no-repeat;
+  height: 770px;
+}
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+padding: 10px;
+}
+.nav__link {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.toggler {
+    display: none;
+  }
+.promo-btn {
+  display: none;
+}
+.promo__title {
+  font-size: 55px;
+}
+.promo__row-title {
+  width: 700px;
+  margin-top: 170px;
+}
+.text {
+  font-size: 20px;
+}
+.promo__form-row {
+  margin-left: auto;
+  margin-top: 75px;
+}
+.promo__form {
+  display: block;
+  width: 270px;
+  height: 350px;
+  background-color: white;
+  border: 2px solid #000;
+  opacity: 0.9;
+  padding-top: 30px;
+  
+}
+input {
+  border: none;
+  width: 210px;
+  height: 30px;
+  border-bottom: 2px solid #000;
+  margin-left: 30px;
+}
+.form-text {
+  font-size: 20px;
+  margin-left: 30px;
+  
+}
+.form-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px;
+
+}
+.form__select {
+ border: none;
+  width: 210px;
+  height: 30px;
+  border-bottom: 2px solid #000;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.form-btn {
+  background-color: #021a23;
+  width: 270px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+}
+
+
+/*---------------------------------- растим*/
+
+.grow-item {
+ width: 470px;
+ height: 270px;
+ margin: 15px;
+ padding: 15px 0 0 15px;
+}
+
+.grow-item-vokal {
+  background-image: url(../images/directions_card_img_2.jpg);
+  width: 570px;
+}
+.grow-item-guitar {
+  background-image: url(../images/directions_card_img_1.jpg);
+}
+.grow-item-piano {
+  background-image: url(../images/directions_card_img_3.jpg);
+}
+.grow-item-lectures {
+  background-image: url(../images/directions_card_img_4.jpg);
+  display: block;
+  background-repeat: no-repeat;
+  width: 270px;
+}
+.grow-row {
+  display: flex;
+}
+.grow-btn {
+  background-color: #eec643;
+  width: 270px;
+  height: 270px;
+  text-align: top;
+  font-size: 20px;
+  transform: rotate(0deg);
+  transform-origin: left;
+  position: static;
+  margin: 15px;
+}
+.grow-text {
+  color: #fff;
+  font-size: 20px;
+  width: auto;
+  height: 20px;
+}
+.item-title {
+  height: 30px;
+  width: 300px;
+  font-size: 30px;
+  font-weight: 700;
+
+}
 
 
 
@@ -411,16 +570,13 @@ position: relative;
 
 
 
-
-
-
-
-
-
-
-
-
-.col {
+@media (min-width: 1400px) {
+.wrapper {
+  background-image: url(../images/bg_main-1440.jpg);
+  width: 1440px;
+}
+}
+/*.col {
   padding-left: 15px;
   padding-right: 15px;
   flex-grow: 0;
@@ -436,7 +592,7 @@ position: relative;
 
 .col--lg-pl {
 	padding-left: 80px;
-}
+}*/
 
 
 
