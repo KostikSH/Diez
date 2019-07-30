@@ -14,36 +14,33 @@
 
   
     <div class="wrapper">
-      <header class="header">
-        <div class="container container-header">
-          <div class="logo">
-            <a href="#" class="logo-link">Diez</a>
-          </div>
-
-          <a href="" class="toggler" id="toggler"><span class="burger"></span></a>
-        
-          <nav class="nav" id="nav">
-            <ul class="nav__list" >
-              <li class="nav__item">
-                <a href="#" class="nav__link">направление</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">о школе</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">видео</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">контакт</a>
-              </li>
-            </ul>
-          </nav>
-        
-        </div>
-      </header>
-
-   
       <section class="promo">
+        <header class="header">
+          <div class="container container-header">
+            <div class="logo">
+              <a href="#" class="logo-link">Diez</a>
+            </div>
+
+            <a href="" class="toggler" id="toggler"><span class="burger"></span></a>
+          
+            <nav class="nav" id="nav">
+              <ul class="nav__list" >
+                <li class="nav__item">
+                  <a href="#" class="nav__link">направление</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">о школе</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">видео</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">контакт</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
         <div class="container">
           <div class="promo__row-title">
             <h1 class="promo__title"><span class="promo__title--full">Diez - </span>Школа музыкального исскуства</h1>
@@ -55,30 +52,30 @@
             <p class="form-text">Попробуй новые направления бесплатно</p>
             <form>
               <br>
-              <input class="form__input" type="text" name="firstname"><br>
+              <input class="form__input" type="text" placeholder="Имя" name="firstname"><br>
               <br>
-              <input type="text" name="lastname">
-              <select class="form__select" name="123" id="">
+              <input type="text" placeholder="Телефон" name="lastname">
+              <select class="form__select" placeholder="Направление" name="123" id="">
                 <optgroup>1</optgroup>
                 <optgroup>2</optgroup>
                 <optgroup>3</optgroup>
                 <optgroup>4</optgroup>
               </select>
+              <button class="form-btn">ЗАПИСАТЬСЯ</button>
             </form>
           </div>
-          <button class="form-btn">ЗАПИСАТЬСЯ</button>
           <button class="promo-btn">
             ВВОДНЫЙ УРОК
           </button>
         </div>
         </div>
       </section> 
-    </div>
+    
 
     <section class="grow">
-      <div class="container">
+      <div class="container grow-container">
         <div class="row-title title-wrap">
-          <h2 class="title">Растим музыкантов</h2>
+          <h2 class="title title--rotate">Растим музыкантов</h2>
         </div>
         <div class="grow-wrap">
           <div class="grow-row">
@@ -107,8 +104,8 @@
     </section> 
 
     <section class="temp">
-      <div class="container">
-        <div class="temp-row">
+      <div class="container temp-container">
+        <div class="temp-row temt-row--margin">
           <div class="temp-title title-wrap">
             <h2 class="title">Задаем темп</h2>
           </div>
@@ -126,18 +123,32 @@
             <h3 class="item-title">Студия</h3>
             <p class="text  temp-text">Записывай песни каждый месяц</p>
           </div>
-          <div class="temp__row-forma">
-            <h3 class="temp__title-forma">Вводный урок</h3>
-            <p class="text-forma">Попробуй любые направления  бесплатно</p>
+         
+          <div class="temp__form">
+            <span class="form-title form-title--color">Вводный урок</span>
+            <p class="form-text">Попробуй новые направления бесплатно</p>
+            <form class="input-row">
+              <br>
+              <input class="temp-input" type="text" placeholder="Имя" name="firstname"><br>
+              <br>
+              <input class="temp-input" type="text" placeholder="Телефон" name="lastname">
+              <select class="form__select" placeholder="Направление" name="123" id="">
+                <optgroup>1</optgroup>
+                <optgroup>2</optgroup>
+                <optgroup>3</optgroup>
+                <optgroup>4</optgroup>
+              </select>
+              <div class="row-btn">
+                <button class="form-btn form-btn--color">ЗАПИСАТЬСЯ</button>
+              </div>
+            </form>
           </div>
-          <button class="temp-btn">ВВОДНЫЙ УРОК</button>
-        </div>
       </div>
     </section>
-
+    <!-- --------------------------------------for mobile -->
     <section class="school">
-      <div class="container">
-        <div class="row-title title-wrap">
+      <div class="container school-container">
+        <div class="row-title title-wrap school__title-wrap">
           <h2 class="title school-title">В стенах школы</h2>
         </div>
         <div class="carousel school-wrapper">
@@ -157,30 +168,76 @@
             <h2 class="item-title school__item-title">Зимняя вишня</h2>
             <p class="text  school-text">Финальный концерт 2018 года</p>
           </div>
-        </div>  
+        </div>
+        <!-- --------------------------------------for desktop -->
+
+        <div class="school-col1">
+          <div class="row-title title-wrap sch__title-wrap">
+            <h2 class="title school-title">В стенах школы</h2>
+          </div>
+          <div class="desktop-item--cherry">
+            <h2 class="desktop-item--title school__item-title">Зимняя вишня</h2>
+            <p class="text  school-text">Финальный концерт 2018 года</p>
+          </div>
+        </div>
+          <div class="school-col2">
+            <div class="desktop-item  school-item--young  ">
+            <h2 class="desktop-item--title school__item-title">Зимняя вишня</h2>
+            <p class="text  school-text">Финальный концерт 2018 года</p>
+          </div>
+          <div class="desktop-item  school-item--summer  ">
+            <h2 class="desktop-item--title school__item-title">Зимняя вишня</h2>
+            <p class="text  school-text">Финальный концерт 2018 года</p>
+          </div>
+          <div class="desktop-item  school-item--trofimov  ">
+            <h2 class="desktop-item--title school__item-title">Зимняя вишня</h2>
+            <p class="text  school-text">Финальный концерт 2018 года</p>
+          </div>
+          </div>  
      </div> 
     </section>
-    <sec class="contacts">
-      <div class="container">
-        <div class="row-title title-wrap">
-          <h2 class="title school-title">Ждем тебя</h2>
+    <section class="contacts">
+      <div class="container container-contacts">
+        <div class="container-map">
+          <div class="row-title title-wrap contacts-title-wrap">
+            <h2 class="title contacts-title">Ждем тебя</h2>
+          </div>
+          <div class="contacts-item">
+            <a href="tel:+78125665656" class="phone">+7 (812) 566 56 56</a>
+            <p class="contacts-text">СПБ, 6-я Линия ВО,42</p>
+          </div>
+          <div class="map-wrapper" id="map"></div>
         </div>
-        <div class="contacts-item">
-          <a href="tel:+78125665656" class="phone">+7 (812) 566 56 56</a>
-          <p class="contacts-text">СПБ, 6-я Линия ВО,42</p>
-        </div>
-        <div class="map-wrapper" id="map">
-          
+        <div class="container-form">
+          <div class="temp__form">
+            <span class="form-title form-title--color">Вводный урок</span>
+            <p class="form-text">Попробуй новые направления бесплатно</p>
+            <form class="input-row">
+              <br>
+              <input class="temp-input" type="text" placeholder="Имя" name="firstname"><br>
+              <br>
+              <input class="temp-input" type="text" placeholder="Телефон" name="lastname">
+              <select class="form__select" placeholder="Направление" name="123" id="">
+                <optgroup>1</optgroup>
+                <optgroup>2</optgroup>
+                <optgroup>3</optgroup>
+                <optgroup>4</optgroup>
+              </select>
+              <div class="row-btn">
+                <button class="form-btn form-btn--color">ЗАПИСАТЬСЯ</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </sec>
+    </section>
 
 
 
      <footer>
   
      </footer>
-  
+  </div>
 <!-- ---------------------------------------------- JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
