@@ -43,7 +43,7 @@ body {
 
 }
 .promo {
-  background-image: url(../images/bg_main.jpg);
+  background-image: url(../images/bg_main-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,7 +62,7 @@ body {
 
 }
 .logo {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .toggler {
     position: absolute;
@@ -139,8 +139,9 @@ body {
 }
 .promo-btn {
   background-color: #eec643;
-  width: 100%;
+  width: 290px;
   height: 60px;
+  color: #fff;
   font-size: 16px;
   margin-bottom: 25px;
   border: none;
@@ -170,10 +171,11 @@ body {
   display: block;
 }
 .school-title {
-  max-width: 259px;
+  max-width: 230px;
 }
 
 /* ------------------------------------------grow*/
+
 .grow-item {
   width: 290px;
   height: 145px;
@@ -196,6 +198,7 @@ body {
 }
 .grow-btn {
   background-color: #eec643;
+  color: #fff;
   width: 145px;
   height: 60px;
   text-align: left;
@@ -206,7 +209,6 @@ body {
   bottom: -30px;
   border: none;
   padding: 10px 15px;
-
 }
 .grow-row {
   display: flex;
@@ -233,10 +235,13 @@ body {
   padding: 30px 0 0 10px;
   
 }
+.temp-title {
+  margin-bottom: 26px;
+}
 .temp-item-sostav {
   background-image: url(../images/sostav_m.jpg);
   background-repeat: no-repeat; 
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .temp-item-result {
   background-image: url(../images/result_m.jpg);
@@ -247,6 +252,7 @@ body {
   background-image: url(../images/studio_m.jpg);
   background-repeat: no-repeat; 
   width: 212px;
+  margin-top: 15px;
 }
 .temp-btn {
   background-color: #eec643;
@@ -323,14 +329,15 @@ position: relative;
 }
 .school-item--young {
   background-image: url(../images/video_card_img_young.jpg);
+  margin: 0 15px;
 }
 .school-item--summer {
   background-image: url(../images/video_card_img_summer.jpg);
-  margin-top: 30px;
+  margin: 0 15px;
 }
 .school-item--trofimov {
   background-image: url(../images/video_card_img_Trofimov.jpg);
-  margin-top: 30px;
+  margin: 0 15px;
 }
 
 .school-text {
@@ -353,7 +360,15 @@ position: relative;
   width: 290px; 
   background-color: gray;
 }
-
+.contacts-btn {
+  background-color: #eec643;
+  width: 290px;
+  height: 60px;
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 0;
+  border: none;
+}
 
 
 .nav {
@@ -393,6 +408,9 @@ position: relative;
 .grow-item-lectures {
   display: none;
 }
+.grow__btn-desktop {
+  display: none;
+}
 .temp__form {
   display: none;
 }
@@ -402,11 +420,17 @@ position: relative;
 .form {
   display: none;
 }
+.school-text--hide {
+  display: none;
+}
 .school-col1 {
   display: block;
 }
 .school-col2 {
   display: block;
+}
+.form-wrap {
+  display: none;
 }
 
 .nav__list {
@@ -414,6 +438,18 @@ position: relative;
   list-style: none;
   margin: 0;
   padding: 15px;
+}
+.container-footer {
+  display: none;
+}
+.container-form {
+  display: none;
+}
+.school-col2 {
+  display: none;
+}
+.school-col1 {
+  display: none;
 }
 
 
@@ -429,17 +465,15 @@ position: relative;
   display: flex;
   flex-wrap: wrap; 
 }
-.news-list {
-  display: flex;
-}
 .promo {
   background-image: url(../images/bg_main.jpg);
   background-repeat: no-repeat;
-  /*height: 770px;*/
   background-size: cover;
-}
-.promo-btn {
-  width: 300px;
+  height: 770px;
+ 
+  }
+.news-list {
+  display: flex;
 }
 .nav {
   display: flex;
@@ -473,43 +507,52 @@ padding: 10px;
 
 
 /*---------------------------------- растим*/
-
+.grow-wrap {
+  padding-left: 100px;
+}
 .grow-item {
  width: 470px;
  height: 270px;
- margin: 15px;
  padding: 15px 0 0 15px;
 }
 
 .grow-item-vokal {
   background-image: url(../images/directions_card_img_2.jpg);
   width: 570px;
+  margin: 0 15px 15px 0;
 }
 .grow-item-guitar {
   background-image: url(../images/directions_card_img_1.jpg);
+  margin: 0 0 15px 15px;
 }
 .grow-item-piano {
   background-image: url(../images/directions_card_img_3.jpg);
+  margin: 15px 15px 15px 0;
 }
 .grow-item-lectures {
   background-image: url(../images/directions_card_img_4.jpg);
   display: block;
   background-repeat: no-repeat;
   width: 270px;
+  margin: 15px;
 }
 .grow-row {
   display: flex;
 }
 .grow-btn {
+  display: none;
+}
+.grow__btn-desktop {
+  display: block;
   background-color: #eec643;
   width: 270px;
   height: 270px;
+  color: #fff;
   text-align: top;
-  font-size: 20px;
-  transform: rotate(0deg);
-  transform-origin: left;
-  position: static;
-  margin: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 15px 0 15px 15px;
+  padding: 20px 30px;
 }
 .grow-text {
   color: #fff;
@@ -528,10 +571,38 @@ padding: 10px;
   transform: rotate(-90deg);
   transform-origin: left;
   position: absolute;
-  left: 258px;
-  bottom: -30px;
+  left: 30px;
+  bottom: -24px;
   border: none;
   padding: 10px 15px;
+  white-space: nowrap;
+}
+.temp-item-studio {
+  margin-top: 0;
+}
+.form-wrap{
+  display: block;
+  width: 270px;
+  height: 100%;
+  background-color: white;
+  border: 2px solid #eec643;
+  opacity: 1;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  position: relative;
+  }
+  .school-item--young {
+  background-image: url(../images/video_card_img_young.jpg);
+  margin: 0;
+}
+.school-item--summer {
+  background-image: url(../images/video_card_img_summer.jpg);
+  margin: 30px 0;
+}
+.school-item--trofimov {
+  background-image: url(../images/video_card_img_Trofimov.jpg);
+  margin: 30px 0;
 }
 .school-wrapper {
   display: none;
@@ -547,24 +618,63 @@ padding: 10px;
 .desktop-item {
   width: 270px;
   height: 170px;
+  position: relative;
+}
+.desktop-item:before {
+  position: absolute;
+  background-image: url(../images/play-button-s.png);
+  background-repeat: no-repeat;
 }
 .desktop-item--title {
+  color: #fff;
+  margin-top: 0px;
+  font-size: 14px;
+}
+.desktop-main--title {
   color: #fff;
   margin-top: 0px;
 }
 .school-col2 {
   margin-left: 30px;
+  display: block;
+}
+.school-text--hide {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  display: block;
+}
+.school-text-row {
+  width: 300px;
+  padding: 30px;
+}
+.school-text-mobile {
+  display: none;
+}
+.school-text {
+  font-size: 14px;
+
 }
 .school-col1 {
   display: flex;
   flex-wrap: wrap;
 }
+.school-item {
+  width: 239px;
+  height: 185px;
+  padding: 30px 0 0 10px;
+  margin-top: 10px;
+  margin: 0 10px 25px ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 .school-container {
   margin-top: 100px;
 }
 .school-title {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translate(-490%);
   max-width: 600px;
+  white-space: nowrap;
 }
 .sch__title-wrap {
   width: 100px;
@@ -583,10 +693,29 @@ padding: 10px;
   margin-top: 100px;
 }
 .contacts-title-wrap {
-  width: 300px;
+  width: 600px;
+}
+.title:before {
+    position: absolute;
+    content: "";
+    width: 570px;
+    height: 2px;
+    background-color: #eec643;
+    left: 0;
+    display: block;
+}
+.title:after {
+    position: absolute;
+    content: "";
+    width: 570px;
+    height: 2px;
+    background-color: #eec643;
+    left: 0;
+    display: block;
 }
 .contacts-item {
-  width: 300px;
+  width: 260px;
+  font-size: 20px;
 }
 .container-map {
   display: flex;
@@ -600,7 +729,29 @@ height: 470px;
 .contacts-title {
   margin-bottom: 42px;
 }
+.contacts-btn {
+  display: none;
+}
+/*--------------------------------------footer*/
 
+.list-wrap {
+margin-left: auto;
+}
+.social-list {
+  display: flex;
+  padding-top: 15px;
+}
+.social-link {
+  text-decoration: none;
+  color: #000;
+}
+.container-footer {
+  margin-top: 70px;
+}
+.container-form {
+  display: block;
+}
+ 
 }
 
 
@@ -671,7 +822,7 @@ input {
 }
 .temp-item-sostav {
   background-image: url(../images/advantages_card_img_1.jpg);
-  margin-right: 30px;
+  margin: 15px 30px 0 0;
 }
 .temp-row {
   width: 570px;
@@ -685,6 +836,7 @@ input {
   width: 270px;
   height: 470px;
   background-image: url(../images/advantages_card_img_2.jpg);
+  margin-top: 15px;
 }
 .temp-title {
   position: static;
@@ -706,18 +858,8 @@ input {
 
 
 
-}
-.temp__form {
-  display: block;
-  width: 270px;
-  height: 100%;
-  background-color: white;
-  border: 2px solid #eec643;
-  opacity: 1;
-  padding-top: 30px;
-  margin-bottom: 100px;
-  margin-left: 30px;
-  position: relative;
+
+
   
 }
 .temp-input {
